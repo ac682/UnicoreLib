@@ -4,7 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Unicore</Authors>
     <Product>Unicore</Product>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <PackageProjectUrl>https://github.com/ac682/UnicoreLib</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ac682/UnicoreLib</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
