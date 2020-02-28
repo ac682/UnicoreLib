@@ -15,7 +15,7 @@ namespace Unicore.Configuration.Json.JsonNet
             StreamReader stream = new StreamReader(reader);
             string json = stream.ReadToEnd();
             JObject obj = (JObject)JsonConvert.DeserializeObject(json);
-            result = pattern.Select(x => (x.Key, obj[x.Key].ToObject(x.Type)));
+            result = pattern.Select(x => (x.Key, obj[x.Key]?.ToObject(x.Type))).Where(x => x.Item2 !=null);
             stream.Close();
         }
 
